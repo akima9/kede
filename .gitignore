@@ -34,6 +34,9 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 # Edit at https://www.toptal.com/developers/gitignore?templates=codeigniter
 
 ### CodeIgniter ###
+.htaccess
+*.txt
+*/config/*
 */config/development
 */logs/log-*.php
 !*/logs/index.html
