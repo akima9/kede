@@ -1,0 +1,40 @@
+a:link {color:black;text-decoration: none;}
+a:visited {color:black;text-decoration: none;}
+a:hover {color:white;text-decoration: none;}
+
+.inner{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.top-wrapper{
+	background-color: #16A085;
+}
+.top-wrapper .logo{
+	text-align: center;
+}
+.top-wrapper .reg-wrapper{
+	overflow: hidden;
+}
+.top-wrapper .reg-wrapper li{
+	float: right;
+	margin-left: 10px;
+}
+
+.contents-wrapper .register-form input,
+.contents-wrapper .register-form button,
+.contents-wrapper .login-form input,
+.contents-wrapper .login-form button{
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.contents-wrapper .cate-title{
+	text-align: center;
+	padding: 50px 0;
+}
+.contents-wrapper .register-form p{
+	margin-bottom: 10px;
+	color : red;
+}
