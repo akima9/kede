@@ -37,7 +37,6 @@ class Main extends CI_Controller {
 	}
 
 	public function register_form(){
-
 		// 회원가입 폼 유효성 검사
 		$this->form_validation->set_rules('user-id', '아이디', 'required|alpha_dash|min_length[5]|max_length[12]',
 			array(

@@ -26,4 +26,18 @@ class User_model extends CI_Model {
         $result = $this->db->insert('t_users');
         return $result;
     }
+
+    // 아이디 중복확인 SQL
+    public function search_user($res){
+        $this->db->select('user_id');
+        $this->db->where('user_id', $res['user_id']);
+        $this->db->where('use_yn', 'Y');
+        $query = $this->db->get('t_users');
+        $row = $query->result();
+        if(count($row) > 0){
+            return "dupe";
+        }else{
+            return "ok";
+        }
+    }
 }
